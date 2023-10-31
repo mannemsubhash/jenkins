@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="rugal.sample.core.service.impl.StudentServiceImplTest" time="3.276" errors="1" skipped="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.20.1+1-post-Ubuntu-0ubuntu122.04"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ubuntu/mannem"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ubuntu/mannem"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.20.1+1-post-Ubuntu-0ubuntu122.04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.2.0-1012-aws"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -DskipTest=true"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.20.1"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="skipTest" value="true"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2023-08-24"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="rugal.sample.core.service.impl.StudentServiceImplTest" name="testFindById" time="0.511">
+    <skipped/>
+  </testcase>
+  <testcase classname="rugal.sample.core.service.impl.StudentServiceImplTest" name="testSave" time="2.765">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:515)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy28.save(Unknown Source)
+	at rugal.sample.core.service.impl.StudentServiceImplTest.testSave(StudentServiceImplTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	... 42 more
+Caused by: java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy28.save(Unknown Source)
+	at rugal.sample.core.service.impl.StudentServiceImplTest.testSave(StudentServiceImplTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 61 more
+------
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.jolbox.bonecp.PoolUtil.generateSQLException(PoolUtil.java:192)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:422)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	... 45 more
+Caused by: org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	... 49 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 61 more
+</error>
+    <system-out>06:11:12,733 [ INFO] GenericApplicationContext:513 - Refreshing org.springframework.context.support.GenericApplicationContext@48a242ce: startup date [Tue Oct 31 06:11:12 UTC 2023]; root of context hierarchy
+06:11:13,818 [DEBUG] BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@77b14724
+06:11:13,820 [DEBUG] BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@77b14724
+06:11:13,821 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@77b14724
+06:11:13,823 [DEBUG] BasicTypeRegistry:146 - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@7b84fcf8
+06:11:13,831 [DEBUG] BasicTypeRegistry:146 - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@663411de
+06:11:13,833 [DEBUG] BasicTypeRegistry:146 - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@33b1c5c5
+06:11:13,841 [DEBUG] BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@4b41e4dd
+06:11:13,841 [DEBUG] BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@4b41e4dd
+06:11:13,842 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@4b41e4dd
+06:11:13,843 [DEBUG] BasicTypeRegistry:146 - Adding type registration character -&gt; org.hibernate.type.CharacterType@66746f57
+06:11:13,843 [DEBUG] BasicTypeRegistry:146 - Adding type registration char -&gt; org.hibernate.type.CharacterType@66746f57
+06:11:13,844 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@66746f57
+06:11:13,846 [DEBUG] BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@10ded6a9
+06:11:13,846 [DEBUG] BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@10ded6a9
+06:11:13,847 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@10ded6a9
+06:11:13,853 [DEBUG] BasicTypeRegistry:146 - Adding type registration integer -&gt; org.hibernate.type.IntegerType@6d9f7a80
+06:11:13,853 [DEBUG] BasicTypeRegistry:146 - Adding type registration int -&gt; org.hibernate.type.IntegerType@6d9f7a80
+06:11:13,854 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@6d9f7a80
+06:11:13,855 [DEBUG] BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@3b00856b
+06:11:13,861 [DEBUG] BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@3b00856b
+06:11:13,862 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@3b00856b
+06:11:13,864 [DEBUG] BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@67c2e933
+06:11:13,864 [DEBUG] BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@67c2e933
+06:11:13,865 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@67c2e933
+06:11:13,868 [DEBUG] BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@72c28d64
+06:11:13,868 [DEBUG] BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@72c28d64
+06:11:13,869 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@72c28d64
+06:11:13,873 [DEBUG] BasicTypeRegistry:146 - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@54c62d71
+06:11:13,873 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@54c62d71
+06:11:13,874 [DEBUG] BasicTypeRegistry:146 - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@4af0df05
+06:11:13,875 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@4af0df05
+06:11:13,877 [DEBUG] BasicTypeRegistry:146 - Adding type registration string -&gt; org.hibernate.type.StringType@7216fb24
+06:11:13,878 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@7216fb24
+06:11:13,885 [DEBUG] BasicTypeRegistry:146 - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@d3957fe
+06:11:13,886 [DEBUG] BasicTypeRegistry:146 - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@5e1fa5b1
+06:11:13,887 [DEBUG] BasicTypeRegistry:146 - Adding type registration url -&gt; org.hibernate.type.UrlType@4fce136b
+06:11:13,887 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@4fce136b
+06:11:13,889 [DEBUG] BasicTypeRegistry:146 - Adding type registration date -&gt; org.hibernate.type.DateType@3a6f2de3
+06:11:13,889 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@3a6f2de3
+06:11:13,891 [DEBUG] BasicTypeRegistry:146 - Adding type registration time -&gt; org.hibernate.type.TimeType@44e3a2b2
+06:11:13,893 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@44e3a2b2
+06:11:13,894 [DEBUG] BasicTypeRegistry:146 - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@6b53bcc2
+06:11:13,905 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@6b53bcc2
+06:11:13,905 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@6b53bcc2
+06:11:13,909 [DEBUG] BasicTypeRegistry:146 - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@424ebba3
+06:11:13,913 [DEBUG] BasicTypeRegistry:146 - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@616fe72b
+06:11:13,914 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@616fe72b
+06:11:13,915 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@616fe72b
+06:11:13,917 [DEBUG] BasicTypeRegistry:146 - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@293a5f75
+06:11:13,920 [DEBUG] BasicTypeRegistry:146 - Adding type registration locale -&gt; org.hibernate.type.LocaleType@40dff0b7
+06:11:13,921 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@40dff0b7
+06:11:13,923 [DEBUG] BasicTypeRegistry:146 - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@2c7b5824
+06:11:13,925 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@2c7b5824
+06:11:13,926 [DEBUG] BasicTypeRegistry:146 - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@5c08c46a
+06:11:13,930 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@5c08c46a
+06:11:13,931 [DEBUG] BasicTypeRegistry:146 - Adding type registration class -&gt; org.hibernate.type.ClassType@c35172e
+06:11:13,931 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@c35172e
+06:11:13,933 [DEBUG] BasicTypeRegistry:146 - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@2a5b3fee
+06:11:13,936 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@2a5b3fee
+06:11:13,938 [DEBUG] BasicTypeRegistry:146 - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@2101b44a
+06:11:13,938 [DEBUG] BasicTypeRegistry:146 - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@35e5d0e5
+06:11:13,941 [DEBUG] BasicTypeRegistry:146 - Adding type registration binary -&gt; org.hibernate.type.BinaryType@77d2e85
+06:11:13,941 [DEBUG] BasicTypeRegistry:146 - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@77d2e85
+06:11:13,944 [DEBUG] BasicTypeRegistry:146 - Adding type registration [B -&gt; org.hibernate.type.BinaryType@77d2e85
+06:11:13,945 [DEBUG] BasicTypeRegistry:146 - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@4c5474f5
+06:11:13,949 [DEBUG] BasicTypeRegistry:146 - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@4c5474f5
+06:11:13,951 [DEBUG] BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@4c5474f5
+06:11:13,953 [DEBUG] BasicTypeRegistry:146 - Adding type registration image -&gt; org.hibernate.type.ImageType@3569fc08
+06:11:13,954 [DEBUG] BasicTypeRegistry:146 - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@522a32b1
+06:11:13,954 [DEBUG] BasicTypeRegistry:146 - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@522a32b1
+06:11:13,954 [DEBUG] BasicTypeRegistry:146 - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@522a32b1
+06:11:13,957 [DEBUG] BasicTypeRegistry:146 - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@13e547a9
+06:11:13,958 [DEBUG] BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@13e547a9
+06:11:13,958 [DEBUG] BasicTypeRegistry:146 - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@13e547a9
+06:11:13,959 [DEBUG] BasicTypeRegistry:146 - Adding type registration text -&gt; org.hibernate.type.TextType@aafcffa
+06:11:13,965 [DEBUG] BasicTypeRegistry:146 - Adding type registration ntext -&gt; org.hibernate.type.NTextType@3a1dd365
+06:11:13,969 [DEBUG] BasicTypeRegistry:146 - Adding type registration blob -&gt; org.hibernate.type.BlobType@2374d36a
+06:11:13,969 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@2374d36a
+06:11:13,970 [DEBUG] BasicTypeRegistry:146 - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@424fd310
+06:11:13,981 [DEBUG] BasicTypeRegistry:146 - Adding type registration clob -&gt; org.hibernate.type.ClobType@53dacd14
+06:11:13,981 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@53dacd14
+06:11:13,983 [DEBUG] BasicTypeRegistry:146 - Adding type registration nclob -&gt; org.hibernate.type.NClobType@18cebaa5
+06:11:13,984 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@18cebaa5
+06:11:13,985 [DEBUG] BasicTypeRegistry:146 - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@f001896
+06:11:13,988 [DEBUG] BasicTypeRegistry:146 - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@4409e975
+06:11:13,990 [DEBUG] BasicTypeRegistry:146 - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@5644dc81
+06:11:13,999 [DEBUG] BasicTypeRegistry:146 - Adding type registration object -&gt; org.hibernate.type.ObjectType@2a2c13a8
+06:11:13,999 [DEBUG] BasicTypeRegistry:146 - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@2a2c13a8
+06:11:14,000 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@66b7550d
+06:11:14,000 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@3543df7d
+06:11:14,000 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@7c541c15
+06:11:14,001 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@3542162a
+06:11:14,002 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@698122b2
+06:11:14,002 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@4212a0c8
+06:11:14,002 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@1e7aa82b
+06:11:14,003 [DEBUG] BasicTypeRegistry:146 - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@3b2c0e88
+06:11:14,023 [ INFO] Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+06:11:14,032 [ INFO] Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+06:11:14,038 [ INFO] Environment:239 - HHH000206: hibernate.properties not found
+06:11:14,047 [ INFO] Environment:346 - HHH000021: Bytecode provider name : javassist
+06:11:14,059 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+06:11:14,061 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+06:11:14,062 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+06:11:14,065 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+06:11:14,066 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+06:11:14,071 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+06:11:14,072 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+06:11:14,073 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+06:11:14,077 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+06:11:14,078 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+06:11:14,078 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+06:11:14,084 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+06:11:14,085 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+06:11:14,086 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+06:11:14,093 [DEBUG] DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+06:11:14,113 [DEBUG] IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+06:11:14,115 [DEBUG] IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+06:11:14,117 [DEBUG] IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+06:11:14,137 [DEBUG] StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -&gt; [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+06:11:14,140 [DEBUG] StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -&gt; [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+06:11:14,205 [DEBUG] ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+06:11:14,209 [DEBUG] Configuration:1841 - Preparing to build session factory with filters : {}
+06:11:14,323 [ WARN] JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1885)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1843)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:324)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 73 more
+------
+
+06:11:14,339 [ INFO] Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+06:11:14,350 [ INFO] LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+06:11:14,393 [DEBUG] Configuration:3748 - Processing hbm.xml files
+06:11:14,393 [DEBUG] Configuration:3778 - Process annotated classes
+06:11:14,397 [DEBUG] AnnotationBinder:601 - Binding entity from annotated class: rugal.sample.core.entity.Student
+06:11:14,422 [DEBUG] Ejb3Column:239 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+06:11:14,425 [DEBUG] AnnotationBinder:1185 - No value specified for &apos;javax.persistence.sharedCache.mode&apos;; using UNSPECIFIED
+06:11:14,432 [DEBUG] EntityBinder:397 - Import with entity name student
+06:11:14,439 [DEBUG] EntityBinder:586 - Bind entity rugal.sample.core.entity.Student on table student
+06:11:14,472 [DEBUG] Ejb3Column:239 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(student), mappingColumn=id, insertable=true, updatable=true, unique=false}
+06:11:14,475 [DEBUG] PropertyBinder:185 - MetadataSourceProcessor property id with lazy=false
+06:11:14,482 [DEBUG] AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [rugal.sample.core.entity.Student:id]
+06:11:14,483 [DEBUG] SimpleValueBinder:385 - building SimpleValue for id
+06:11:14,484 [DEBUG] PropertyBinder:271 - Building property id
+06:11:14,487 [DEBUG] Ejb3Column:239 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(student), mappingColumn=age, insertable=true, updatable=true, unique=false}
+06:11:14,493 [DEBUG] PropertyBinder:185 - MetadataSourceProcessor property age with lazy=false
+06:11:14,493 [DEBUG] AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [rugal.sample.core.entity.Student:age]
+06:11:14,493 [DEBUG] SimpleValueBinder:385 - building SimpleValue for age
+06:11:14,494 [DEBUG] PropertyBinder:271 - Building property age
+06:11:14,494 [DEBUG] Ejb3Column:239 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(student), mappingColumn=name, insertable=true, updatable=true, unique=false}
+06:11:14,496 [DEBUG] PropertyBinder:185 - MetadataSourceProcessor property name with lazy=false
+06:11:14,497 [DEBUG] AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [rugal.sample.core.entity.Student:name]
+06:11:14,497 [DEBUG] SimpleValueBinder:385 - building SimpleValue for name
+06:11:14,498 [DEBUG] PropertyBinder:271 - Building property name
+06:11:14,499 [DEBUG] SimpleValueBinder:422 - Starting fillSimpleValue for id
+06:11:14,501 [DEBUG] SimpleValueBinder:422 - Starting fillSimpleValue for age
+06:11:14,501 [DEBUG] SimpleValueBinder:422 - Starting fillSimpleValue for name
+06:11:14,503 [DEBUG] Configuration:1482 - Processing fk mappings (*ToOne and JoinedSubclass)
+06:11:14,505 [DEBUG] Configuration:1687 - Processing extends queue
+06:11:14,509 [DEBUG] Configuration:1745 - Processing extends queue
+06:11:14,509 [DEBUG] Configuration:1690 - Processing collection mappings
+06:11:14,509 [DEBUG] Configuration:1700 - Processing native query and ResultSetMapping mappings
+06:11:14,510 [DEBUG] Configuration:1708 - Processing association property references
+06:11:14,510 [DEBUG] Configuration:1730 - Creating tables&apos; unique integer identifiers
+06:11:14,510 [DEBUG] Configuration:1731 - Processing foreign key constraints
+06:11:14,516 [DEBUG] JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
+06:11:14,517 [DEBUG] JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+06:11:14,523 [DEBUG] StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06:11:14,527 [DEBUG] SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
+06:11:14,529 [DEBUG] SettingsFactory:128 - Automatic session close at end of transaction: disabled
+06:11:14,529 [DEBUG] SettingsFactory:155 - Scrollable result sets: disabled
+06:11:14,529 [DEBUG] SettingsFactory:161 - Wrap result sets: disabled
+06:11:14,530 [DEBUG] SettingsFactory:167 - JDBC3 getGeneratedKeys(): disabled
+06:11:14,530 [DEBUG] SettingsFactory:179 - multi-tenancy strategy : NONE
+06:11:14,533 [DEBUG] SettingsFactory:185 - Connection release mode: auto
+06:11:14,533 [ INFO] TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+06:11:14,535 [DEBUG] SettingsFactory:207 - Using BatchFetchStyle : LEGACY
+06:11:14,539 [DEBUG] SettingsFactory:232 - Default batch fetch size: 1
+06:11:14,539 [DEBUG] SettingsFactory:238 - Generate SQL with comments: disabled
+06:11:14,540 [DEBUG] SettingsFactory:244 - Order SQL updates by primary key: disabled
+06:11:14,540 [DEBUG] SettingsFactory:250 - Order SQL inserts for batching: disabled
+06:11:14,541 [DEBUG] SettingsFactory:258 - Default null ordering: none
+06:11:14,541 [DEBUG] SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+06:11:14,542 [ INFO] ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+06:11:14,543 [DEBUG] SettingsFactory:268 - Query language substitutions: {}
+06:11:14,544 [DEBUG] SettingsFactory:274 - JPA-QL strict compliance: disabled
+06:11:14,544 [DEBUG] SettingsFactory:282 - Second-level cache: enabled
+06:11:14,546 [DEBUG] SettingsFactory:288 - Query cache: disabled
+06:11:14,546 [DEBUG] RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+06:11:14,550 [DEBUG] SettingsFactory:301 - Optimize cache for minimal puts: disabled
+06:11:14,553 [DEBUG] SettingsFactory:316 - Structured second-level cache entries: disabled
+06:11:14,553 [DEBUG] SettingsFactory:326 - Second-level cache direct-reference entries: disabled
+06:11:14,553 [DEBUG] SettingsFactory:332 - Automatic eviction of collection cache: disabled
+06:11:14,556 [DEBUG] SettingsFactory:340 - Statistics: disabled
+06:11:14,556 [DEBUG] SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
+06:11:14,557 [DEBUG] SettingsFactory:373 - Default entity-mode: pojo
+06:11:14,557 [DEBUG] SettingsFactory:379 - Named query checking : enabled
+06:11:14,559 [DEBUG] SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+06:11:14,559 [DEBUG] SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
+06:11:14,560 [DEBUG] SettingsFactory:413 - JTA Track by Thread: enabled
+06:11:14,571 [DEBUG] SessionFactoryImpl:229 - Building session factory
+06:11:14,580 [DEBUG] SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
+06:11:14,585 [DEBUG] SessionFactoryImpl:286 - Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, hibernate.format_sql=true, java.specification.version=11, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, sun.arch.data.model=64, java.vendor.url=https://ubuntu.com/, hibernate.connection.autocommit=false, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=/home/ubuntu/mannem/target/surefire/surefirebooter10756434379974594318.jar /home/ubuntu/mannem/target/surefire/surefire9744521472065227637tmp /home/ubuntu/mannem/target/surefire/surefire_06050119751983565934tmp, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.version.date=2023-08-24, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, basedir=/home/ubuntu/mannem, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=validate, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.20.1+1-post-Ubuntu-0ubuntu122.04, user.name=ubuntu, hibernate.classLoader.application=jdk.internal.loader.ClassLoaders$AppClassLoader@8bcc55f, skipTest=true, file.encoding=UTF-8, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, localRepository=/home/ubuntu/.m2/repository, java.io.tmpdir=/tmp, java.version=11.0.20.1, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.specification.maintenance.version=2, sun.io.unicode.encoding=UnicodeLittle, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=/home/ubuntu/mannem/target/test-classes:/home/ubuntu/mannem/target/classes:/home/ubuntu/.m2/repository/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar:/home/ubuntu/.m2/repository/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar:/home/ubuntu/.m2/repository/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar:/home/ubuntu/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/ubuntu/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final.jar:/home/ubuntu/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/ubuntu/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/ubuntu/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Final/jboss-logging-annotations-1.2.0.Final.jar:/home/ubuntu/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/ubuntu/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/4.0.4.RELEASE/spring-orm-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/ubuntu/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/4.0.4.RELEASE/spring-test-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/4.0.4.RELEASE/spring-beans-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.8.1/aspectjweaver-1.8.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/4.0.4.RELEASE/spring-context-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/4.0.4.RELEASE/spring-expression-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/4.0.4.RELEASE/spring-aop-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/4.0.4.RELEASE/spring-core-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/4.0.4.RELEASE/spring-tx-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/4.0.4.RELEASE/spring-jdbc-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/4.0.4.RELEASE/spring-web-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/4.0.4.RELEASE/spring-webmvc-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.0/jackson-core-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.0/jackson-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.0/jackson-databind-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.2.0/jackson-dataformat-smile-2.2.0.jar:/home/ubuntu/.m2/repository/ml/rugal/ssh-common/0.1/ssh-common-0.1.jar:, java.vm.vendor=Ubuntu, user.timezone=Etc/UTC, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, surefire.test.class.path=/home/ubuntu/mannem/target/test-classes:/home/ubuntu/mannem/target/classes:/home/ubuntu/.m2/repository/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar:/home/ubuntu/.m2/repository/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar:/home/ubuntu/.m2/repository/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar:/home/ubuntu/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/ubuntu/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final.jar:/home/ubuntu/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/ubuntu/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/ubuntu/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Final/jboss-logging-annotations-1.2.0.Final.jar:/home/ubuntu/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/ubuntu/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/4.0.4.RELEASE/spring-orm-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/ubuntu/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/4.0.4.RELEASE/spring-test-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/4.0.4.RELEASE/spring-beans-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.8.1/aspectjweaver-1.8.1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/4.0.4.RELEASE/spring-context-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/4.0.4.RELEASE/spring-expression-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/4.0.4.RELEASE/spring-aop-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/4.0.4.RELEASE/spring-core-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/4.0.4.RELEASE/spring-tx-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/4.0.4.RELEASE/spring-jdbc-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/4.0.4.RELEASE/spring-web-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/4.0.4.RELEASE/spring-webmvc-4.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.0/jackson-core-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.0/jackson-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.0/jackson-databind-2.2.0.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.2.0/jackson-dataformat-smile-2.2.0.jar:/home/ubuntu/.m2/repository/ml/rugal/ssh-common/0.1/ssh-common-0.1.jar:, sun.cpu.endian=little, user.home=/home/ubuntu, user.language=en, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, surefire.real.class.path=/home/ubuntu/mannem/target/surefire/surefirebooter10756434379974594318.jar, path.separator=:, os.version=6.2.0-1012-aws, java.runtime.name=OpenJDK Runtime Environment, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, user.dir=/home/ubuntu/mannem, os.arch=amd64, java.vm.info=mixed mode, sharing, java.vm.version=11.0.20.1+1-post-Ubuntu-0ubuntu122.04, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=JDBC URL = jdbc:postgresql://127.0.0.1:5432/postgres, Username = postgres, partitions = 1, max (per partition) = 10, min (per partition) = 1, idle max age = 240 min, idle test period = 60 min, strategy = DEFAULT, java.class.version=55.0}
+06:11:14,606 [DEBUG] JaccIntegrator:90 - Skipping JACC integration as it was not enabled
+06:11:14,612 [DEBUG] DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.PostgreSQLDialect]
+06:11:14,747 [DEBUG] AbstractEntityPersister:3676 - Static SQL for entity: rugal.sample.core.entity.Student
+06:11:14,747 [DEBUG] AbstractEntityPersister:3681 -  Version select: select id from student where id =?
+06:11:14,748 [DEBUG] AbstractEntityPersister:3684 -  Snapshot select: select student_.id, student_.age as age2_0_, student_.name as name3_0_ from student student_ where student_.id=?
+06:11:14,749 [DEBUG] AbstractEntityPersister:3687 -  Insert 0: insert into student (age, name, id) values (?, ?, ?)
+06:11:14,749 [DEBUG] AbstractEntityPersister:3688 -  Update 0: update student set age=?, name=? where id=?
+06:11:14,749 [DEBUG] AbstractEntityPersister:3689 -  Delete 0: delete from student where id=?
+06:11:14,779 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1603dc2f]
+06:11:14,780 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,785 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,785 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,804 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,813 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,815 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [NONE]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,815 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b7b3edb]
+06:11:14,815 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,816 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,816 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,816 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,821 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,821 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [READ]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,829 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@108531c2]
+06:11:14,830 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,830 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,830 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,831 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,831 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,831 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [UPGRADE]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update
+06:11:14,832 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a9d5dff]
+06:11:14,833 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,834 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,834 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,834 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,835 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,836 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [UPGRADE_NOWAIT]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update nowait 
+06:11:14,836 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2bac9ba]
+06:11:14,837 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,840 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,845 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,845 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,848 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,848 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [UPGRADE_SKIPLOCKED]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update
+06:11:14,849 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5bdd5689]
+06:11:14,849 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,849 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,850 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,850 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,850 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,851 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [FORCE]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update nowait 
+06:11:14,852 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73ab3aac]
+06:11:14,853 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,853 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,854 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,855 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,861 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,862 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [PESSIMISTIC_READ]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for share
+06:11:14,864 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65ae095c]
+06:11:14,866 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,868 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,868 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,869 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,869 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,873 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [PESSIMISTIC_WRITE]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update
+06:11:14,873 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e140e59]
+06:11:14,876 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,876 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,877 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,879 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,879 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,880 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [PESSIMISTIC_FORCE_INCREMENT]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=? for update nowait 
+06:11:14,881 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cd61783]
+06:11:14,881 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,881 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,882 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,889 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,889 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,890 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [OPTIMISTIC]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,891 [DEBUG] QuerySpacesImpl:177 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57aa341b]
+06:11:14,891 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : age
+06:11:14,893 [DEBUG] MetamodelGraphWalker:154 - Visiting attribute path : name
+06:11:14,893 [DEBUG] FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+06:11:14,893 [DEBUG] LoadQueryJoinAndFetchProcessor:111 - processing queryspace &lt;gen:0&gt;
+06:11:14,894 [DEBUG] LoadPlanTreePrinter:72 - LoadPlan(entity=rugal.sample.core.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=rugal.sample.core.entity.Student, querySpaceUid=&lt;gen:0&gt;, path=rugal.sample.core.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=rugal.sample.core.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+06:11:14,894 [DEBUG] EntityLoader:146 - Static select for entity rugal.sample.core.entity.Student [OPTIMISTIC_FORCE_INCREMENT]: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,925 [DEBUG] Loader:56 - Static select for action ACTION_MERGE on entity rugal.sample.core.entity.Student: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,926 [DEBUG] Loader:56 - Static select for action ACTION_REFRESH on entity rugal.sample.core.entity.Student: select student0_.id as id1_0_0_, student0_.age as age2_0_0_, student0_.name as name3_0_0_ from student student0_ where student0_.id=?
+06:11:14,944 [DEBUG] SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@205b132e
+06:11:14,953 [DEBUG] SessionFactoryRegistry:89 - Registering SessionFactory: f85906ec-91b3-4261-a090-19dcd3aa8a2f (&lt;unnamed&gt;)
+06:11:14,953 [DEBUG] SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
+06:11:14,953 [DEBUG] SessionFactoryImpl:505 - Instantiated session factory
+06:11:14,965 [ INFO] SchemaValidator:137 - HHH000229: Running schema validator
+06:11:14,965 [ INFO] SchemaValidator:145 - HHH000102: Fetching database metadata
+06:11:14,973 [ERROR] SchemaValidator:151 - HHH000319: Could not get database metadata
+java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaValidator.validate(SchemaValidator.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:525)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:324)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 70 more
+------
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.jolbox.bonecp.PoolUtil.generateSQLException(PoolUtil.java:192)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:422)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaValidator.validate(SchemaValidator.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:525)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:324)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	... 58 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 70 more
+06:11:14,995 [ERROR] SchemaValidator:159 - HHH000300: Could not complete schema validation
+java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaValidator.validate(SchemaValidator.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:525)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:324)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 70 more
+------
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.jolbox.bonecp.PoolUtil.generateSQLException(PoolUtil.java:192)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:422)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaValidator.validate(SchemaValidator.java:146)
+	at org.hibernate.internal.SessionFactoryImpl.&lt;init&gt;(SessionFactoryImpl.java:525)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:324)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	... 58 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 70 more
+06:11:15,009 [DEBUG] NamedQueryRepository:155 - Checking 0 named HQL queries
+06:11:15,009 [DEBUG] NamedQueryRepository:171 - Checking 0 named SQL queries
+06:11:15,021 [DEBUG] StatisticsInitiator:110 - Statistics initialized [enabled=false]
+06:11:15,058 [ INFO] HibernateTransactionManager:339 - Using DataSource [JDBC URL = jdbc:postgresql://127.0.0.1:5432/postgres, Username = postgres, partitions = 1, max (per partition) = 10, min (per partition) = 1, idle max age = 240 min, idle test period = 60 min, strategy = DEFAULT] of Hibernate SessionFactory for HibernateTransactionManager
+save
+06:11:15,202 [DEBUG] LogicalConnectionImpl:226 - Obtaining JDBC connection
+06:11:15,217 [DEBUG] SqlExceptionHelper:139 - Could not open connection [n/a]
+java.sql.SQLException: Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy28.save(Unknown Source)
+	at rugal.sample.core.service.impl.StudentServiceImplTest.testSave(StudentServiceImplTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 61 more
+------
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.jolbox.bonecp.PoolUtil.generateSQLException(PoolUtil.java:192)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:422)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy28.save(Unknown Source)
+	at rugal.sample.core.service.impl.StudentServiceImplTest.testSave(StudentServiceImplTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	... 49 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 61 more
+06:11:15,231 [ WARN] SqlExceptionHelper:144 - SQL Error: 0, SQLState: null
+06:11:15,232 [ERROR] SqlExceptionHelper:146 - Unable to open a test connection to the given database. JDBC url = jdbc:postgresql://127.0.0.1:5432/postgres, username = postgres. Terminating connection pool (set lazyInit to true if you expect to start your database after your app). Original Exception: ------
+org.postgresql.util.PSQLException: Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363)
+	at com.jolbox.bonecp.BoneCP.&lt;init&gt;(BoneCP.java:416)
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy28.save(Unknown Source)
+	at rugal.sample.core.service.impl.StudentServiceImplTest.testSave(StudentServiceImplTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:454)
+	at java.base/java.net.Socket.&lt;init&gt;(Socket.java:231)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:76)
+	... 61 more
+------
+
+</system-out>
+  </testcase>
+</testsuite>
